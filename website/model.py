@@ -92,7 +92,7 @@ def log_naive_bayes(treated_sms, word_frequency, class_frequency, return_likelih
         return 0
 
 
-dataframe_sms = pd.read_csv('backend\dataset\sms.csv')
+dataframe_sms = pd.read_csv('dataset\sms.csv')
 dataframe_sms['spam'] = dataframe_sms['spam'].map({'spam': 1, 'ham': 0})
 
 X, Y = preprocess_sms(dataframe_sms)
